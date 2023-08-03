@@ -18,7 +18,9 @@
         <h3>Choose a Topic</h3>
         <hr>
         
-        
+        <div>
+            <a href="{% url 'home' %}{{topic.name}}">All</a>
+        </div>
 
         {% for topic in topics %}
 
@@ -31,6 +33,7 @@
     </div>
 
     <div> 
+        <div>{{room_count}} Rooms Availble</div>
         <a href="{% url 'create-room' %}">Create Room</a>
 
         <div>

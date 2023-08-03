@@ -1,8 +1,14 @@
-<h1>
-        <a style="color: green;" href="#">
-        
-            LOGO
 
-        <hr>
-    </a>
-</h1>
+<a style="color: green;" href="#">
+    <h1>
+        LOGO
+    </h1>
+        
+    <hr>
+</a>
+
+<form action="{% url 'home' %}">
+    <input type="text" name="q" placeholder="Search Room..."> 
+</form>
+
+<a href="{% url 'login' %}">Login</a>
